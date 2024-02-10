@@ -1,0 +1,52 @@
+a. Contain at least four different .html pages, at least one of which is index.html (the main page of your website), and it should be possible to get
+from any page on your website to any other page by following one or more hyperlinks.
+1. index.html
+2. syscom.html
+3. network.html
+4. quizz.html
+
+b. Use at least ten (10) distinct HTML tags
+1. <p>
+2. <br>
+3. <hr>
+4. <ul>
+5. <li>
+6. <table>
+7. <th>
+8. <td>
+9. <tr>
+10. <img>
+11. <center>
+12. <b>
+13. <i>
+14. <u>
+15. <a href>
+16. <iframe>
+17. <embed>
+18. <h1>
+19. <h2>
+20. <h3>
+21. <section>
+
+c. Integrate one or more features from Bootstrap into your site.
+Bootstrap is a popular library (that comes with lots of CSS classes and more)
+1. Button
+2. side bar
+3. footer
+4. header
+
+d. Have at least one stylesheet file of your own creation, styles.css,
+1. id
+2. table
+3. body
+4. class
+5. button
+6. font
+7. input
+8. container
+
+e. Integrate one or more features of JavaScript into your site to make your site more interactive.
+1. dropdown
+2. slideshow
+3. quiz (trivia)
+

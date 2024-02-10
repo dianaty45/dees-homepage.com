@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <!-- Header -->
+    <head>
+            <title>Dee's Homepage</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- style -->
+<style>
+body {font-family: "Lato", sans-serif;}
+
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/* style for table */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+</style>
+</head>
+    <body>
+
+      <!-- My first bootstrap-->
+        <div class="jumbotron text-center">
+          <img src="img\network.jpg" style="width:100%">
+            <H2><i>“Technology is a useful servant but a dangerous master.”</h2></i>
+            <h5>Christian Lous Lange</h5>
+            <h2><b>Learning is Fun!</h></div>
+
+     <!-- main page -->
+     <div class="sidebar">
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="#C1"><i class="fa fa-fw fa-wrench"></i> Network</a>
+        <a href="#C2"><i class="fa fa-fw fa-user"></i> Cloud System</a>
+        <a href="quizz.html"><i class="fa fa-fw fa-envelope"></i> Lets Play</a>
+      </div>
+
+      <div class="main">
+        <h2 id="C1"><b>What is computer network?</h2></b>
+        <p><iframe width="660" height="415" src="https://www.youtube.com/embed/n_KghQP86Sw" title="" frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen><br>Powered by <a href="https://youtubeembedcode.com">
+            embed youtube video</a></iframe></p>
+        <p>
+            Computer networking refers to connected computing devices (such as laptops, desktops, servers, smartphones,
+            and tablets) and an ever-expanding array of IoT devices (such as cameras, door locks, doorbells,
+            refrigerators, audio/visual systems, thermostats, and various sensors) that communicate with one another.</p>
+        <p>Specialized devices such as switches, routers, and access points form the foundation of computer networks.</p>
+        <ul>
+        <li>Switches connect and help to internally secure computers, printers, servers, and other devices to networks in
+            homes or organizations. Access points are switches that connect devices to networks without the use of cables.
+        </li>
+        <li>Routers connect networks to other networks and act as dispatchers. They analyze data to be sent across a network, choose the best routes for it, and send it on its way.
+            Routers connect your home and business to the world and help protect information from outside security threats.
+        </li>
+        </ul>
+        <hr>
+
+        <!-- software bookmark-->
+        <h2 id="C2"><b>What is Cloud System?</h2></b>
+
+        <!-- insert video by emmbed from the source using https://youtubeembedcode.com/ -->
+        <p><iframe width="660" height="415" src="https://www.youtube.com/embed/ngK97cSXWoM" title="" frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowFullScreen><br>Powered by <a href="https://youtubeembedcode.com">embed youtube video</a>
+        </a></iframe></p>
+        <p>Cloud computing refers to the use of hosted services, such as data storage, servers, databases, networking, and software over the internet. The data is stored on physical servers, which are maintained by a cloud service provider. Computer system resources, especially data
+        storage and computing power, are available on-demand, without direct management by the user in cloud computing.</p>
+
+        <p>Instead of storing files on a storage device or hard drive, a user can save them on cloud, making it possible
+            to access the files from anywhere, as long as they have access to the web. The services hosted on cloud can
+            be broadly divided into infrastructure-as-a-service (IaaS), platform-as-a-service (PaaS), and
+            software-as-a-service (SaaS). Based on the deployment model, cloud can also be classified as public, private, and hybrid cloud.</p>
+        <center><img src="img/cloud.png" width="50%"></center>
+        <p>Cloud computing can either be classified based on the deployment model or the type of service. Based on the specific deployment model,
+        it can be classify cloud as public, private, and hybrid cloud. </p>
+        <table>
+            <tr>
+              <th><center>Types of Cloud Computing</th></center>
+              <th><center>Definition</th></center>
+            </tr>
+            <tr>
+              <td>Private cloud</td>
+              <td>the computing services are offered over a private IT network for the dedicated use of a single organization. Also termed internal, enterprise, or corporate cloud, a private
+                cloud is usually managed via internal resources and is not accessible to anyone outside the organization. </td>
+            </tr>
+            <tr>
+              <td>Public cloud</td>
+              <td>the services on public cloud are available to anyone who wants to use or purchase them. These services could be free or sold on-demand, where users only have to pay
+                per usage for the CPU cycles, storage, or bandwidth they consume.</td>
+            </tr>
+            <tr>
+                <td>Hybrid Cloud</td>
+                <td>Hybrid cloud uses a combination of public and private cloud features. The “best of both worlds” cloud
+                    model allows a shift of workloads between private and public clouds as the computing and cost
+                    requirements change. </td>
+            </tr>
+          </table>
+      </div>
+
+<br><br>
+<!-- footer -->
+
+<!-- footer end-->
+
+ <!-- Copyright -->
+ <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+  © 2020 Copyright:
+  <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+</div>
+<!-- Copyright -->
+
+<!-- script for slideshow -->
+      <script>
+    </body>
+</html>

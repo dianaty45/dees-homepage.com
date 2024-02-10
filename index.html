@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <!-- Header -->
+    <head>
+            <title>Dee's Homepage</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+            <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+
+       <!-- Add group of button, menu diatas berfungsi sebagai navigasi -->
+       <div class="btn-group">
+        <button type="button" class="btn btn-primary" onclick="window.location.href='index.html'">Home</button>
+        <button type="button" class="btn btn-primary" onclick="window.location.href='syscom.html'">Computer System</button>
+        <button type="button" class="btn btn-primary" onclick="window.location.href='network.html'">Computer Networking</button>
+        <button type="button" class="btn btn-primary">Data Analyst</button>
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+          Social Impact of Informatics <span class="caret"></span></button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Computer Inventor</a></li>
+            <li><a href="#">Computer Development</a></li>
+            <li><a href="#">Intellectual property rights</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- My first bootstrap-->
+        <div class="jumbotron text-center">
+          <img src="img\header.jpg" style="width:100%">
+            <H2><i>It's not a faith in technology. It's faith in people.</h2></i>
+            <h5>Steve Jobs - Co-founder of Apple</h5>
+            <h2><b>Learning is Fun!</h></div>
+
+      <!-- Kontainer yang berisi gambaran-gambaran materi yang akan dipelajari pada menubar-->
+            <div class="container">
+              <div class="col-sm-4">
+                <h4><center><b>Computer System</b></center></h4>
+                <p>Computer systems allow users to enter, manipulate, and store data.
+                  Examples of devices included in a computer system are CPU, monitor, keyboard,
+                  mouse, and various other optional components.</p>
+              </div>
+
+              <!-- second container-->
+              <div class="col-sm-4">
+                <h4><center><b>Computer Networking</b></center></h4>
+                <p>A computer network refers to computing devices that are interconnected and can exchange
+                  data and share resources with each other. These network devices use a system of rules, called
+                  as a communications protocol, for transmitting information via physical or wireless technology.</p>
+              </div>
+
+              <!-- third container-->
+              <div class="col-sm-4">
+                <h4><center><b>Data Analyst</b></center></h4>
+                <p>Data processing process with the aim of finding useful information that can be used as a basis
+                  in making decisions to solve a problem. This analysis process includes activities
+                  grouping data based on its characteristics, cleaning data, transforming data,
+                  create a data model to find important information from the data</p>
+              </div>
+            </div>
+          </div>
+
+        <!-- slideshow container -->
+        <div class="container">
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <center><img src="img\1.png" style="width:70%"></center>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <center><img src="img\2.png" style="width:70%"></center>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <center><img src="img\3.png" style="width:70%"></center>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <center><img src="img\4.png" style="width:70%"></center>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <center><img src="img\5.png" style="width:70%"></center>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <center><img src="img\6.png" style="width:70%"></center>
+          </div>
+
+          <!-- push button for choose the slide-->
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="img/1.png" style="width:100%" onclick="currentSlide(1)" alt="Dampak Sosial Informatika">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/2.png" style="width:100%" onclick="currentSlide(2)" alt="Capaian Pembelajaran">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/3.png" style="width:100%" onclick="currentSlide(3)" alt="Tujuan Pembelajaran">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/4.png" style="width:100%" onclick="currentSlide(4)" alt="Sejarah Komputer">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/5.png" style="width:100%" onclick="currentSlide(5)" alt="Tokoh Komputer">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/6.png" style="width:100%" onclick="currentSlide(6)" alt="Charles Babbage">
+            </div>
+          </div>
+        </div>
+      <br>
+
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2020 Copyright:
+    <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- footer end-->
+
+<!-- script for slideshow -->
+      <script>
+          let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+      </script>
+    </body>
+</html>
